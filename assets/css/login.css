@@ -1,0 +1,139 @@
+body{
+    margin:0px;
+}
+
+.bkg{
+    background-image: url('/imagess/scenery1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+}
+
+/* .bkg::after{
+    position: absolute;
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.216);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.536);
+    z-index: 100;
+    border-radius: 20px;
+    width: 28%;
+    height: 80%;
+    box-shadow: 5x 5px white;
+    padding: 10px;
+    padding-bottom: 15px !important;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+input{
+    width: 90%;
+    margin-left: 4%;
+    padding: 10px 5px;
+    margin-bottom: 5%;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    /* margin-left: 8px;
+    text-align: center; */
+    width: 92%;
+    margin-left: 4%;
+    padding: 10px 5px;
+    margin-bottom: 5%;
+    background-color: white;
+    border: white;
+    border: 20px;
+    border-radius: 5px;
+    background-color: #228cdc;
+}
+
+.forgot_password a{
+    margin-left: 4%;
+    color: rgb(202, 118, 202);
+}
+
+.orlogin_box>p{
+    text-align: center;
+    text-decoration: solid black;
+    margin: 5px 0px;
+}
+
+.facebook p,.instagram p{
+    margin-left: 4%;
+}
+
+.social_media{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 10px;  
+    margin-left: 2%; 
+}
+.facebook p,.instagram p
+{
+    border: 1.5px solid black;
+    text-align: center;
+    padding: 10px 5px;
+    margin-right: 9%; 
+    border-radius: 5px;
+}
+
+.facebook p{
+    background-color: rgb(49, 49, 208);
+    margin-left: 4%;
+
+}
+
+.instagram p{
+    background-color: rgb(227, 48, 48);
+}
+
+.signup p{
+    text-align: center;
+}
+
+.signup p a{
+    color: rgb(141, 141, 248);
+}
+
+.text_box p img{
+    position: relative;
+    top: 0px;
+}
+.text_box p {
+    position: relative;
+    top: 12px;
+    left: 4%;
+}
+
+h1,p{
+    color: white;
+}
+
+h1{
+    font-family: 'Montserrat',sans-serif;
+}
+
+p{
+    font-family: 'Poppins',sans-serif;
+}
