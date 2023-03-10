@@ -16,8 +16,7 @@ body{
 @font-face {
     font-family: heading1; 
     src: url("/font-styles/junegull.ttf");
-}
-
+} 
 /* .bkg::after{
     position: absolute;
     content: '';
@@ -37,8 +36,8 @@ body{
     background-color: rgba(0, 0, 0, 0.536);
     z-index: 100;
     border-radius: 20px;
-    width: 28%;
-    height: 80%;
+    width: 48%;
+    height: 70%;
     box-shadow: 5x 5px white;
     padding: 10px;
     padding-bottom: 15px !important;
@@ -93,21 +92,21 @@ input[type="submit"]:hover{
 
 .social_media{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 10px;  
     margin-left: 2%; 
 }
-.google button
+.facebook button,.instagram button
 {
     border: 1.5px solid black;
-    width: 95%;
+    width: 90%;
     text-align: center;
     padding: 10px 5px;
-    margin-left: 2%; 
+    margin-right: 9%; 
     border-radius: 5px;
 }
 
-/* .facebook button{
+.facebook button{
     background-color: rgb(49, 49, 208);
     margin-left: 4%;
 
@@ -117,14 +116,14 @@ input[type="submit"]:hover{
     background-color: rgb(84, 84, 209);
     margin-left: 4%;
 
-} */
-
-.google button{
-    background-color: rgba(32, 15, 227);
 }
 
-.google button:hover{
-    background-color: rgb(80, 67, 227);
+.instagram button{
+    background-color: rgb(227, 48, 48);
+}
+
+.instagram button:hover{
+    background-color: rgb(230, 94, 94);
 }
 
 .signup p{
@@ -150,11 +149,28 @@ h1,p{
 }
 
 h1{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p{
     font-family: 'Poppins',sans-serif;
+}
+
+.divide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 0px;
+
+}
+
+.left_side{
+    border-right: white 2px solid;
+    padding-right: 5px;
+}
+
+.right_side{
+    border-left: white 2px solid;
+    padding-right: 5px; 
 }
 
 .container h1{
@@ -163,7 +179,9 @@ p{
     text-decoration-color: aqua;
 }
 
-.google img{
+.vertical_line{
+    border-left: 4px solid white;
+    height: 400px;
     position: relative;
-    top: 2px;
+    left: 50%;
 }
