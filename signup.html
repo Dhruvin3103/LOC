@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in Page</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <div class="bkg"></div>
@@ -34,19 +34,22 @@
                                 <input type="email or number" placeholder="Enter your Email id or Phone number" required>
                             </div>
                             <div class="text_box"><p><img src="imagess/lock.png" alt="account" width="13px">&nbsp;&nbsp;Password</p>
-                                <input type="password" placeholder="Enter your password" required>
+                                <input type="password" id="password" placeholder="Enter your password" required>
                             </div>
-                            <div class="text_box"><p><img src="imagess/lock.png" alt="account" width="13px">&nbsp;&nbsp;Confirm Password</p>
-                                <input type="password" placeholder="Confirm you password" required>
+                            <div class="text_box"><p><img src="imagess/lock.png" alt="account" width="13px  ">&nbsp;&nbsp;Confirm Password</p>
+                                <input type="password" placeholder="Confirm you password" id = "confirm-password" required>
                             </div>
+                            <p id="message"></p>
                         </div>
 
-                    </div><br>
+                    </div><br>      
                     <div class="submit_box">
-                        <input type="submit" value="SIGN IN">  
+                        <input type="submit" value="SIGN IN" onclick="checkPassword()">  
                     </div>
                 </form> 
-            </div>
+            </div> 
         </div>
+
+        <script src="assets/js/login.js"></script>
 </body>
 </html>
